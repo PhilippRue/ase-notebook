@@ -27,7 +27,6 @@ setup(
         # core
         "ase>=3.18,<4",
         "attrs>=19,<20",
-        "importlib_resources>=1,<2",
         "numpy>=1.16.4,<2",
         # used for color-map
         # TODO use color-map package, with no matplotlib dependency?
