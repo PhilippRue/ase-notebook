@@ -1,5 +1,5 @@
 """A module for creating visualisations of a structure."""
-from collections import Iterable, Mapping
+from collections.abc import Iterable, Mapping
 from typing import Optional, Tuple, Union
 
 import attr
