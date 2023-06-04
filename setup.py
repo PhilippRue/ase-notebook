@@ -35,7 +35,11 @@ setup(
         "svgwrite>=1.3,<2",
     ],
     extras_require={
-        "threejs": ["pythreejs>=2.1,<3", "ipywidgets>=7.5,<8"],
+        # 'threejs' extra with version pinning as temporary fix for issue #53
+        # reference: https://github.com/chrisjsewell/ase-notebook/issues/53#issuecomment-1575773212
+        "threejs": ["pythreejs==2.3.0", "ipywidgets==7.7.2", "jupyterlab_widgets==1.1.1", "widgetsnbextension==3.6.1"],
+        # # original 'threejs' extra
+        # "threejs": ["pythreejs>=2.1,<3", "ipywidgets>=7.5,<8"],
         "svgconcat": ["svgutils>=0.3,<0.4"],
         "svg2pdf": ["svglib>=0.9,<1", "reportlab>=3.5,<4"],
         "testing": [
