@@ -25,22 +25,22 @@ setup(
     include_package_data=True,
     install_requires=[
         # core
-        "ase>=3.18,<4",
-        "attrs>=19,<20",
-        "numpy>=1.16.4,<2",
+        "ase>=3.18",
+        "attrs>=19",
+        "numpy>=1.16.4",
         # used for color-map
         # TODO use color-map package, with no matplotlib dependency?
-        "matplotlib>=3.1,<4",
+        "matplotlib>=3.1",
         # svg
-        "svgwrite>=1.3,<2",
+        "svgwrite>=1.3",
     ],
     extras_require={
-        "threejs": ["pythreejs>=2.1,<3", "ipywidgets>=7.5,<8"],
-        "svgconcat": ["svgutils>=0.3,<0.4"],
-        "svg2pdf": ["svglib>=0.9,<1", "reportlab>=3.5,<4"],
+        "threejs": ["pythreejs>=2.1", "ipywidgets>=7.5"],
+        "svgconcat": ["svgutils>=0.3"],
+        "svg2pdf": ["svglib>=0.9", "reportlab>=3.5"],
         "testing": [
             "coverage",
-            "pytest>=3.6,<4",
+            "pytest>=3.6",
             "pytest-cov",
             # "pytest-regressions",
         ],
@@ -71,6 +71,8 @@ setup(
         "Programming Language :: Python :: 3.5",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: Implementation :: CPython",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: BSD License",
