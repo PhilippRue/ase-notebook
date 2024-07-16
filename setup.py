@@ -35,7 +35,7 @@ setup(
         "svgwrite>=1.3",
     ],
     extras_require={
-        "threejs": ["pythreejs>=2.1", "ipywidgets>=7.5"],
+        "threejs": ["pythreejs>=2.1", "ipywidgets>=8"],
         "svgconcat": ["svgutils>=0.3"],
         "svg2pdf": ["svglib>=0.9", "reportlab>=3.5"],
         "testing": [

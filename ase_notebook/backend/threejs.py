@@ -48,8 +48,8 @@ class RenderContainer(object):
     def __setattr__(self, name, value):
         """Set attribute."""
         if name == "top_level":
-            if not hasattr(value, "_ipython_display_"):
-                raise ValueError("top_level must have an `_ipython_display_` method")
+            if not hasattr(value, "_repr_mimebundle_"):
+                raise ValueError("top_level must have an `_repr_mimebundle_` method")
             self._kwargs["top_level"] = value
             return
         if name != "_kwargs":
@@ -60,9 +60,9 @@ class RenderContainer(object):
         """Test if key in container."""
         return key in self._kwargs
 
-    def _ipython_display_(self):
+    def _repr_mimebundle_(self, **kwargs):
         """Display the top level rendered in the notebook."""
-        return self.top_level._ipython_display_()
+        return self.top_level._repr_mimebundle_(**kwargs)
 
 
 def generate_3js_render(
